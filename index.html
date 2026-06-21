@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 유학생 생활 도우미</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>AI 유학생 생활 도우미</h1>
+<p>외국인 유학생을 위한 생활 지원 서비스</p>
+</header>
+
+<section class="card">
+<h2>AI 번역</h2>
+<input type="text" id="translateInput" placeholder="번역할 문장을 입력하세요">
+<button onclick="translateText()">번역하기</button>
+<p id="translateResult"></p>
+</section>
+
+<section class="card">
+<h2>과제 관리</h2>
+<input type="text" id="taskName" placeholder="과제명">
+<input type="date" id="taskDate">
+<button onclick="addTask()">추가</button>
+<ul id="taskList"></ul>
+</section>
+
+<section class="card">
+<h2>AI 챗봇</h2>
+<input type="text" id="chatInput" placeholder="질문을 입력하세요">
+<button onclick="chatBot()">질문하기</button>
+<p id="chatResult"></p>
+</section>
+
+<section class="card">
+<h2>생활 정보</h2>
+<div class="info-grid">
+<div class="info">🏥 병원</div>
+<div class="info">🚇 지하철</div>
+<div class="info">🏪 편의점</div>
+<div class="info">🍜 식당</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
